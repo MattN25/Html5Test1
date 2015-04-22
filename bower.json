@@ -1,0 +1,25 @@
+{
+  "name": "test1",
+  "version": "0.0.0",
+  "authors": [
+    "Matt North <northmh@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://matthewnorth.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  }
+}

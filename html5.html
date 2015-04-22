@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>html5 fundamentals test</title>
+    <!-- bower:css 
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+     endbower -->
+
+    <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+
+    <script src="test.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header><a href="#"><h1 id="onloadtarget">header</h1><h2>an exploration of html5</h2></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a>
+                    </li>
+                    <li><a href="#page1">page 1</a>
+                    </li>
+                    <li><a href="#page2">page 2</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>msg</h2>
+                <p id="msg"></p>
+            </article>
+            <article>
+                <h2>article heading</h2>
+                <p>the quick brown fox
+                    <mark>jumps</mark> over the lazy dog</p>
+                <video controls preload>
+                    <source src="Touch.of.Love.The.Intimate.Yoni.and.Lingam.Massage.2012.720p.BRRip.ChaNel1k.CoM.mp4" type="video/mp4" />
+                    <em>browser doesn't support video element?</em>
+                </video>
+                <canvas>no canvas support</canvas>
+                <!--
+            <details>
+                <summary>a summary</summary>
+                <p> and some details</p>
+            </details>
+-->
+                <figure>
+                    <img src="IMG_20121214_111856.jpg" alt="a picture of harmony in a fuzzy coat" width="200">
+                    <figcaption>a figure caption
+                    </figcaption>
+                </figure>
+            </article>
+            <aside>
+                <h2>an aside</h2>
+                <p>jack be nimble jack be quick</p>
+            </aside>
+            <form id="mytestform" onsubmit="return false;" oninput="document.getElementById('meterbarid').value = document.getElementById('progbarid').value = rangeoutput.value = mytestrange.value;">
+                <input type="text" list="colors" placeholder="enter a color" required>
+                <datalist id="colors">
+                    <option label="one label"></option>
+                    <option label="two label"></option>
+                </datalist>
+                <p>
+                    <label for="mytestrangeid">a range:</label>
+                    <input type="range" name="mytestrange" id="mytestrangeid" min="0" max="100" value="70" />
+                    <output for="mytestrangeid" name="rangeoutput">70</output>/100
+                </p>
+
+                <p>
+                    <label for="adate">a date:</label>
+                    <input id="adate" type="date" autofocus>
+                </p>
+                <p>
+                    <label for="acolor">a color:</label>
+                    <input id="acolor" type="color">
+                </p>
+                <p>
+                    <label for="atime">a time:</label>
+                    <input id="atime" type="time">
+                </p>
+                <p>
+                    <label for="adatetime">a datetime:</label>
+                    <input id="adatetime" type="datetime">
+                </p>
+                <p>
+                    <label for="amonth">a month:</label>
+                    <input id="amonth" type="month">
+                </p>
+                <p>
+                    <label for="aweek">a week:</label>
+                    <input id="aweek" type="week">
+                </p>
+                <p>
+                    <label for="aemail">a email:</label>
+                    <input id="aemail" type="email">
+                </p>
+                <p>
+                    <label for="aurl">a url:</label>
+                    <input id="aurl" type="url">
+                </p>
+                <p>
+                    <label for="atel">a tel:</label>
+                    <input id="atel" type="tel">
+                </p>
+                <p>
+                    <label for="anumber">a number:</label>
+                    <input id="anumber" type="number">
+                </p>
+                <p>
+                    <label for="asearch">a search:</label>
+                    <input id="asearch" type="search">
+                </p>
+
+
+
+
+            </form>
+            <article>
+                <h2>bar examples</h2>
+                <p>
+                    <meter id="meterbarid" max="100" min="0" value="70">70%</meter>
+                </p>
+                <p>
+                    <progress id="progbarid" value="70" max="100">70/100</progress>
+                </p>
+            </article>
+        </main>
+        <footer>footer
+            <time datetime="2015-04-12T15:23:00-05:00"></time>
+        </footer>
+    </div>
+</body>
+
+</html>
